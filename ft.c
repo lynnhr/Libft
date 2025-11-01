@@ -6,7 +6,7 @@
 /*   By: lhaydar <lhaydar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/30 13:33:39 by lhaydar           #+#    #+#             */
-/*   Updated: 2025/11/01 14:39:21 by lhaydar          ###   ########.fr       */
+/*   Updated: 2025/11/01 14:41:21 by lhaydar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 //implementing functio
 //testing pushing to github
+//testing pulling
 
 int	ft_isalpha(int c)
 {
