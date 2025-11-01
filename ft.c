@@ -6,14 +6,14 @@
 /*   By: lhaydar <lhaydar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/30 13:33:39 by lhaydar           #+#    #+#             */
-/*   Updated: 2025/10/30 16:15:17 by lhaydar          ###   ########.fr       */
+/*   Updated: 2025/11/01 13:48:46 by lhaydar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <aio.h>
 
-//implementing functio
+//implementing function
 
 int	ft_isalpha(int c)
 {
