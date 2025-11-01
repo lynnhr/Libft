@@ -1,19 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_*.c                                             :+:      :+:    :+:   */
+/*   ft.c                                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lhaydar <lhaydar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/30 13:33:39 by lhaydar           #+#    #+#             */
-/*   Updated: 2025/11/01 13:48:46 by lhaydar          ###   ########.fr       */
+/*   Updated: 2025/11/01 14:39:21 by lhaydar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <aio.h>
 
-//implementing function
+//implementing functio
+//testing pushing to github
 
 int	ft_isalpha(int c)
 {
