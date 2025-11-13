@@ -6,7 +6,7 @@
 /*   By: lhaydar <lhaydar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/01 18:26:53 by lhaydar           #+#    #+#             */
-/*   Updated: 2025/11/13 14:07:56 by lhaydar          ###   ########.fr       */
+/*   Updated: 2025/11/13 14:58:12 by lhaydar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char	*ptr;
 	unsigned char	*s;
 
+	if (!dest && !src)
+		return (NULL);
 	ptr = (unsigned char *) dest;
 	s = (unsigned char *) src;
 	i = 0;
@@ -31,8 +33,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 
 //  int main(void)
 //  {
-// 	char src[6] = "abcd";
-// 	char dest[6] = "ef";
+// 	char src[6] = "";
+// 	char dest[6] = "";
 // 	char *result = ft_memcpy(dest, src, 4);
 // 	for (int i = 0; i <6; i++)
 // 		write(1, &result[i], 1);
