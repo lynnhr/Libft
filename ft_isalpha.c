@@ -6,12 +6,11 @@
 /*   By: lhaydar <lhaydar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/30 13:33:39 by lhaydar           #+#    #+#             */
-/*   Updated: 2025/11/13 12:14:24 by lhaydar          ###   ########.fr       */
+/*   Updated: 2025/11/13 12:21:48 by lhaydar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 
 int	ft_isalpha(int c)
 {
@@ -35,14 +34,3 @@ int	ft_isalpha(int c)
 
 // 	return 0;
 // }
-
-
-
-
-
-
-
-
-
-
-
