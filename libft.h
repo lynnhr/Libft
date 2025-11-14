@@ -1,14 +1,14 @@
-/* ************************************************************************** */
+/******************************************************************************/
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lhaydar <lhaydar@student.42.fr>            +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/30 13:34:40 by lhaydar           #+#    #+#             */
-/*   Updated: 2025/11/14 13:01:05 by lhaydar          ###   ########.fr       */
+/*   Updated: 2025/11/14 21:10:36 by marvin           ###   ########.fr       */
 /*                                                                            */
-/* ************************************************************************** */
+/******************************************************************************/
 
 #ifndef LIBFT_H
 # define LIBFT_H
@@ -16,19 +16,20 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <stddef.h>
+# include <stdint.h>
 
 int				ft_isalpha(int c);
 int				ft_isdigit(int c);
 int				ft_isalnum(int c);
 int				ft_isascii(int c);	
 int				ft_isprint(int c);
-int				ft_strlen(char *str);
+size_t          ft_strlen(const char *s);
 void			*ft_memset(void *s, int c, size_t n);
 void			ft_bzero(void *s, size_t n);
 void			*ft_memcpy(void *dest, const void *src, size_t n);
 void			*ft_memmove(void *dest, const void *src, size_t n);
-unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
-unsigned int	ft_strlcat(char *dest, char *src, unsigned int size);
+size_t			ft_strlcpy(char *dst, const char *src, size_t size);
+size_t          ft_strlcat(char *dest, const char *src, size_t size);
 int				ft_atoi(const char *nptr);
 char			*ft_strrchr(const char *s, int c);
 char			*ft_strchr(const char *s, int c);

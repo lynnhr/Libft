@@ -1,40 +1,37 @@
-/* ************************************************************************** */
+/******************************************************************************/
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lhaydar <lhaydar@student.42.fr>            +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/01 15:29:59 by lhaydar           #+#    #+#             */
-/*   Updated: 2025/11/13 16:23:22 by lhaydar          ###   ########.fr       */
+/*   Updated: 2025/11/14 21:02:49 by marvin           ###   ########.fr       */
 /*                                                                            */
-/* ************************************************************************** */
+/******************************************************************************/
 
 #include "libft.h"
 
-unsigned	int	ft_strlcat(char *dest, char *src, unsigned int size)
+size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
-	unsigned int	i;
-	unsigned int	s;
-	unsigned int	d;
+	size_t	dest_len;
+	size_t	src_len;
+	size_t	i;
 
+	src_len = ft_strlen(src);
+	dest_len = ft_strlen(dest);
+	if (size <= dest_len)
+		return (size + src_len);
 	i = 0;
-	s = 0;
-	d = 0;
-	while (dest[d] && d < size)
-		d++;
-	while (src[s])
-		s++;
-	if (d == size)
-		return (size + s);
-	while (src[i] && d + i + 1 < size)
+	while (src[i] && (dest_len + i + 1) < size)
 	{
-		dest[d + i] = src[i];
+		dest[dest_len + i] = src[i];
 		i++;
 	}
-	dest[d + i] = '\0';
-	return (s + d);
+	dest[dest_len + i] = '\0';
+	return (dest_len + src_len);
 }
+
 // #include <stdio.h>
 // int main()
 // {
