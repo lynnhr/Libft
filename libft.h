@@ -6,7 +6,7 @@
 /*   By: lhaydar <lhaydar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/30 13:34:40 by lhaydar           #+#    #+#             */
-/*   Updated: 2025/11/14 10:36:19 by lhaydar          ###   ########.fr       */
+/*   Updated: 2025/11/14 11:47:31 by lhaydar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int	ft_toupper(int c);
 char *ft_strnstr(const char *big, const char *little, size_t len);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 int	ft_memcmp(const void *s1, const void *s2, size_t n);
-
-
+void *ft_calloc(size_t nmemb, size_t size);
+char *ft_strdup(const char *s);
 
 #endif
