@@ -1,31 +1,31 @@
-/* ************************************************************************** */
+/******************************************************************************/
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lhaydar <lhaydar@student.42.fr>            +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/13 11:42:34 by marvin            #+#    #+#             */
-/*   Updated: 2025/11/14 08:43:11 by lhaydar          ###   ########.fr       */
+/*   Updated: 2025/11/15 08:52:10 by marvin           ###   ########.fr       */
 /*                                                                            */
-/* ************************************************************************** */
+/******************************************************************************/
 
 #include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {
-	char	*ptr;
+	unsigned char	val;
 
-	ptr = (char *) s;
-	while (*ptr != '\0')
+	val = (unsigned char) c;
+	while (*s != val)
 	{
-		if (*ptr == c)
-			return (ptr);
-		ptr++;
+		if (!*s)
+		{
+			return (0);
+		}
+		s++;
 	}
-	if (c == '\0')
-		return (ptr);
-	return (NULL);
+	return ((char *)s);
 }
 
 // #include <stdio.h>
